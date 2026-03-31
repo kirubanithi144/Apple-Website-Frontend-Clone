@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="auth.css">
+    <title>Create Apple ID - Apple</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li class="list"><a href="index.html"><i class="fa-brands fa-apple"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <h1>Create Your Apple ID</h1>
+            <p class="subtitle">You'll use this to sign in and access Apple services</p>
+
+            <form id="signupForm">
+                <div class="form-group">
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number (optional)">
+                </div>
+
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <i class="fas fa-eye toggle-password" onclick="togglePassword('password')"></i>
+                    <span class="password-hint">At least 8 characters with uppercase, lowercase, and a number</span>
+                   
+                </div>
+
+                <div class="form-group">
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password"
+                        required>
+                    <i class="fas fa-eye toggle-password" onclick="togglePassword('confirmPassword')"></i>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to Apple's <a href="#" target="_blank">Terms and Conditions</a> and <a
+                            href="#" target="_blank">Privacy Policy</a></label>
+                   
+                </div>
+
+                <button type="submit" class="btn-primary">Create Apple ID</button>
+            </form>
+
+            <div class="auth-footer">
+                <p>
+                    Already have an Apple ID? <a href="login.html">Sign in here</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="auth-info">
+            <div class="info-box">
+                <i class="fas fa-gift"></i>
+                <h3>Exclusive Offers</h3>
+                <p>Get access to exclusive deals and early access to Apple products.</p>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-cloud"></i>
+                <h3>iCloud Storage</h3>
+                <p>Get 5GB of free iCloud storage for photos, documents, and more.</p>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-lock"></i>
+                <h3>Two-Factor Authentication</h3>
+                <p>Protect your account with advanced security features.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

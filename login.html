@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="auth.css">
+    <title>Sign In - Apple</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li class="list"><a href="index.html"><i class="fa-brands fa-apple"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <h1>Sign In</h1>
+            <p class="subtitle">Use your Apple ID or email address</p>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email or Apple ID" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <i class="fas fa-eye toggle-password" onclick="togglePassword('password')"></i>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe">Keep me signed in</label>
+                </div>
+
+                <button type="submit" class="btn-primary">Sign In</button>
+            </form>
+            <div class="auth-footer">
+                <p>
+                    Don't have an Apple ID? <a href="signup.html">Create one now</a>
+                </p>
+                <a href="#" class="forgot-link">Forgot password?</a>
+            </div>
+        </div>
+
+        <div class="auth-info">
+            <div class="info-box">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure & Private</h3>
+                <p>Your data is encrypted and protected with enterprise-grade security.</p>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-sync"></i>
+                <h3>Seamless Sync</h3>
+                <p>Access your purchases and settings across all your Apple devices.</p>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-heart"></i>
+                <h3>Personal Experience</h3>
+                <p>Get personalized recommendations based on your preferences.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
